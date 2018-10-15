@@ -5,13 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<title>人力协同APP下载</title>
 		<style>
-			body{
-				/*background: url('./logo.jpg') 100% 100%;*/
-			}
 			.logo{
 				width: 20%;
 				display: block;
 				margin: 0 auto;
+				border-radius: .5rem;
 			}
 			a{
 				display: block;
@@ -21,27 +19,46 @@
 				line-height: 2rem;
 				text-align: center;
 				border-radius: 5px;
-				margin: 1rem auto;
+				margin: 0 auto;
+				margin-top: 1rem;
+			}
+			.az{
+				background: #fff;
+				border: 1px solid #9CD700;
+				color: #9CD700;
+			}
+			.apple{
 				background: #FFEDAC;
 				color: orange;
 			}
 			a img{
 				width: 1rem;
 			}
+			p{
+				margin: 0;
+			}
 		</style>
 	</head>
 	<body>
 		<div>
 			<img class="logo" src="./logo.jpg" />
-		
-			<a title="iPhone" href="itms-services://?action=download-manifest&url=https://haofanchen.github.io/renlixietong/app.plist">
-				<img src="./apple.jpg" />
-				点击下载
+			<p style="line-height: 2rem; color: #fff">人力协同正式版</p>
+
+			<a class="az" href="http://42.99.33.57:58600/assets/appmobile/app.apk">
+				<img src="./az.jpg" />
+				安卓下载
 			</a>
-			
-			<p style="color: #ccc;">
-				<span style="color: red;">*</span>
-				如果点击无法下载安装，请复制超链接到浏览器中打开
+			<!-- <p style=" font-size: 12px;">安卓版本下载</p>
+ -->		
+			<a class="apple" title="iPhone" href="itms-services://?action=download-manifest&url=https://haofanchen.github.io/renlixietong/app.plist">
+				<img src="./apple.jpg" />
+				IOS下载
+			</a>
+			<!-- <p style=" font-size: 12px;">IOS版本下载</p>
+ -->			
+			<p style="color: #ccc; margin-top: 2rem;">
+				<span style="color: red; font-size: .9rem;">*</span>
+				如果点击无法下载安装，请在Safari浏览器中打开
 			</p>
 		</div>
 		
